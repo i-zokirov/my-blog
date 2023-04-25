@@ -1,0 +1,51 @@
+{
+  "name": "blog",
+  "author": "Ikboljon Zokirov",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "yarn": ">=1.22.0",
+    "npm": "please-use-yarn"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write .",
+    "prepare": "husky install",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "@types/node": "18.15.11",
+    "@types/react": "18.0.35",
+    "@types/react-dom": "18.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.59.1",
+    "eslint": "8.38.0",
+    "eslint-config-next": "13.3.0",
+    "next": "13.3.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "5.0.4"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.0",
+    "@commitlint/config-conventional": "^17.6.0",
+    "@storybook/addon-essentials": "7.0.4",
+    "@storybook/addon-interactions": "7.0.4",
+    "@storybook/addon-links": "7.0.4",
+    "@storybook/blocks": "7.0.4",
+    "@storybook/nextjs": "7.0.4",
+    "@storybook/react": "7.0.4",
+    "@storybook/testing-library": "0.0.14-next.2",
+    "cross-env": "^7.0.3",
+    "eslint-plugin-storybook": "^0.6.11",
+    "husky": "^8.0.3",
+    "prettier": "^2.8.7",
+    "storybook": "7.0.4"
+  },
+  "resolutions": {
+    "webpack": "^5"
+  }
+}
