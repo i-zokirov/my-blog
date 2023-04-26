@@ -20,9 +20,9 @@ const Footer: React.FC = () => {
             </li>
           ))}
         </ul>
-        {/* social icons */}
+
         <Social source={social} className="social-icons mb-8" />
-        {/* copyright */}
+
         {markdownify({ content: copyright, tag: 'p', className: 'text-light' })}
       </div>
     </footer>
