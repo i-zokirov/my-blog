@@ -9,3 +9,9 @@ export interface ISocialProps {
   };
   className: string;
 }
+
+export interface IPaginationProps {
+  section?: string;
+  currentPage: number;
+  totalPages: number;
+}

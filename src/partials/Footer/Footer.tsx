@@ -8,7 +8,7 @@ import Link from 'next/link';
 const Footer: React.FC = () => {
   const { copyright } = config.params;
   return (
-    <footer className="section bg-theme-dark fixed bottom-0 w-full">
+    <footer className="section bg-theme-dark  w-full">
       <div className="container text-center">
         {/* footer menu */}
         <ul className="mb-8 space-x-4">
