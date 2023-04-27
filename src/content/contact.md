@@ -1,5 +1,5 @@
 ---
-title: "Contact"
-layout: "contact"
+title: 'Contact'
+layout: 'contact'
 draft: false
 ---

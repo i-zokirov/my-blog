@@ -35,7 +35,10 @@ const BaseLayout: React.FC<BaseLayoutProps> = ({
             meta_title ? meta_title : title ? title : config.site.title
           )}
         </title>
-
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=5"
+        />
         {/* canonical url */}
         {canonical && <link rel="canonical" href={canonical} itemProp="url" />}
 

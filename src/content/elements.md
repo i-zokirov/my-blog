@@ -1,5 +1,5 @@
 ---
-title: "Elements"
+title: 'Elements'
 draft: false
 ---
 
@@ -88,7 +88,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime 
 This is an `Inline code` sample.
 
 ```javascript
-var s = "JavaScript syntax highlighting";
+var s = 'JavaScript syntax highlighting';
 alert(s);
 ```
 
