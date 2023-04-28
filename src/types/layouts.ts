@@ -1,4 +1,4 @@
-import { IAuthor, IPost } from './api';
+import { Author, Post } from './api';
 
 export interface BaseLayoutProps {
   title?: string;
@@ -14,11 +14,12 @@ export interface INotFoundProps {
   content: string;
   frontmatter: {
     title: string;
+    [x: string]: any;
   };
 }
 
 export interface IAboutProps {
-  mdxContent: string;
+  content: string;
   frontmatter: {
     title: string;
     image: string;
@@ -32,8 +33,27 @@ export interface IAboutProps {
 }
 
 export interface ISinglePostProps {
-  post: IPost;
-  posts: IPost[];
-  authors: IAuthor[];
+  post: Post;
+  posts?: Post[];
+  authors?: Author[];
   slug: string;
+}
+
+export interface IRegularPageProps {
+  slug: string;
+  postSlug: string;
+  authors: Author[];
+  posts: Post[];
+  data: {
+    frontmatter: {
+      title: string;
+      meta_title: string;
+      description: string;
+      image: string;
+      noindex: boolean;
+      canonical: string;
+      layout: string;
+    };
+    content: string;
+  };
 }

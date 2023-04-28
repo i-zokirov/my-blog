@@ -1,7 +1,7 @@
-import { IAuthor, IPost } from './api';
+import { Author, Post } from './api';
 
 export interface IPostsProps {
-  posts: IPost[];
+  posts: Post[];
   className?: string;
-  authors: IAuthor[];
+  authors: Author[];
 }

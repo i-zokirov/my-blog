@@ -15,3 +15,7 @@
 @layer utilities {
   @import 'utilities';
 }
+
+* {
+  scroll-behavior: smooth;
+}
