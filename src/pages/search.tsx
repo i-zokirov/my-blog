@@ -11,7 +11,7 @@ const search: React.FC = () => {
   const keyword = slugify(query.key as string);
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const { blogPosts } = useBlogContext();
-  console.log(blogPosts);
+
   let searchResults;
   if (blogPosts && blogPosts.length > 0 && keyword) {
     searchResults = blogPosts.filter((post: Post) => {
