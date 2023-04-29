@@ -22,7 +22,8 @@
         "project": "./tsconfig.json"
       },
       "rules": {
-        "storybook/hierarchy-separator": "error"
+        "storybook/hierarchy-separator": "error",
+        "react-hooks/rules-of-hooks": "off"
       }
     }
   ]

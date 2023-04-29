@@ -1,14 +1,16 @@
 import { Pagination } from '@/components';
 import config from '@/config/config.json';
+import { useBlogContext } from '@/context';
 import BaseLayout from '@/layouts/Base';
 import { getSinglePage } from '@/lib';
 import { slugify } from '@/lib/utils';
 import { Posts } from '@/partials';
 import { Post } from '@/types';
+import { useEffect } from 'react';
 
 interface BlogPaginationProps {
   pagination: any;
-  posts: any[];
+  posts: Post[];
   authors: any[];
   currentPage: number;
   slug: string;
@@ -20,6 +22,13 @@ export default function BlogPagination(props: BlogPaginationProps) {
   const indexOfFirstPost = indexOfLastPost - pagination;
   const totalPages = Math.ceil(posts.length / pagination);
   const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
+
+  const { addBlogPosts } = useBlogContext();
+
+  useEffect(() => {
+    addBlogPosts(posts);
+  }, [posts, addBlogPosts]);
+
   return (
     <BaseLayout>
       <section className="section">
